@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '@components/Layout'
+import Hero from '@components/Hero';
 
 import tw from 'twin.macro';
 import { Heading2, Heading3, Paragraphs } from '@styles/ui'
@@ -9,6 +10,7 @@ function IndexPage() {
   const ulList = tw`pl-5 list-disc mb-5 [li]:mb-2 [li]:last-of-type:mb-0`
   return (
     <Layout>
+      <Hero />
       <div css={divContainer}>
         <Heading2 css={[tw`mb-0 lg:mb-0`]}>How to use Twin.macro effectivly</Heading2>
         <Paragraphs>(this is mock-up content, do not take seriously)</Paragraphs>

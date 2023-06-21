@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require("tailwindcss/plugin")
+
 module.exports = {
 	content: [],
 	theme: {
@@ -32,5 +34,18 @@ module.exports = {
             },
 		},
 	},
-	plugins: [],
+	plugins: [
+		plugin(function ({ addUtilities }) {
+			addUtilities({
+				".gradientBlue": {
+					background:
+					"linear-gradient(to right, rgba(37,38,183,0.65) 0%,rgba(37,38,183,0.63) 3%,rgba(8,9,42,0) 78%,rgba(0,0,0,0) 100%)",
+				},
+				".gradientBlue2": {
+					background:
+					"linear-gradient(to right, rgba(27,36,165,0.65) 0%,rgba(27,36,165,0.63) 3%,rgba(6,8,37,0) 78%,rgba(0,0,0,0) 100%)",
+				}
+			})
+		})
+	],
 };

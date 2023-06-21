@@ -4,7 +4,6 @@
 module.exports = {
   siteMetadata: {
     title: `Best Pracitices`,
-    siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
     "gatsby-plugin-emotion",
@@ -17,6 +16,12 @@ module.exports = {
           "@styles": "src/styles",
         },
         extensions: ["js"],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/favicon.png',
       },
     },
   ]
