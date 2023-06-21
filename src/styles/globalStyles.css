@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+    src: url('/fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+    src: url('/fonts/Poppins-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-display: swap;
+    font-style: bold;
+    src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+:root,
+#press-release li {
+    font-size: 16px;
+    font-family: 'Gordita', sans-serif;
+    font-weight: 400;
+    color: #0D0D0D;
+}
