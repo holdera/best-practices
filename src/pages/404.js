@@ -9,7 +9,7 @@ function PageNotFound() {
     return(
         <Layout>
             <div tw='text-center text-white bg-blue'>
-                <h1 css={[Heading1, tw`font-light`]}>Page Not Found</h1>
+                <Heading1 css={tw`font-light`}>Page Not Found</Heading1>
                 <p>Click <Link css={link} to='/'>here</Link> to return to home</p>
             </div>
         </Layout>

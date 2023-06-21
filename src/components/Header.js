@@ -13,8 +13,19 @@ function Header(){
         }
     }
 
+    function windowScrollToItem(item) {
+        const itemToScrollTo = document.querySelector(item);
+        if (itemToScrollTo) {
+            itemToScrollTo.scrollIntoView({behavior: 'smooth'});
+        }
+    }
+
     useEffect(()=> {
         window.addEventListener('scroll', activateHeader);
+        document.querySelector('.header a').addEventListener('click', (e) => {
+            e.preventDefault();
+            windowScrollToItem(e.target.getAttribute('href'));
+        });
     }, [])
 
     const logo = tw`text-white font-bold text-lg lg:(text-xl)`
