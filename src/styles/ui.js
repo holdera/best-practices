@@ -12,6 +12,8 @@ export const Paragraphs = tw.p`text-base mb-4 lg:(mb-6)`;
 
 export const link = tw`font-medium hover:(underline)`;
 
+export const AnchorLink = tw.a`font-medium text-blue hover:(underline)`;
+
 // Layout
 
 // Component
