@@ -1,13 +1,15 @@
-import React from 'react'
-import Layout from '@components/Layout'
+import React from 'react';
+import Layout from '@components/Layout';
 import Hero from '@components/Hero';
 
 import tw from 'twin.macro';
-import { AnchorLink, Heading2, Heading3, Paragraphs } from '@styles/ui'
+import { AnchorLink, Heading2, Heading3, Paragraphs } from '@styles/ui';
 
 function IndexPage() {
+
   const divContainer = tw`container my-5 pt-4 px-5 lg:(my-8 px-0)`
   const ulList = tw`pl-5 list-disc mb-5 [li]:mb-2 [li]:last-of-type:mb-0`
+
   return (
     <Layout>
       <Hero />
@@ -35,6 +37,11 @@ function IndexPage() {
         </ul>
 
         <Paragraphs>The negatives of TailwindCss on its own:</Paragraphs>
+
+        <ul css={ulList}>
+          <li>It's hard to read</li>
+          <li>It bloats your code</li>
+        </ul>
 
         <Paragraphs>With Twin.macro, you can use TailwindCss with the following benefits:</Paragraphs>
 
